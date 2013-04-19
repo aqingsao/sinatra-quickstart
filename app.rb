@@ -1,12 +1,16 @@
 require 'rubygems'
 require 'bundler/setup'
 
-require 'sinatra'
+require 'sinatra/base'
+require 'slim'
 
-get '/' do
-  slim :index
-end
+class Application < Sinatra::Base
+  set :foo, 'bar'
 
-get '/hi' do
-	'Hi'
+  get '/' do
+    slim :index
+  end
+  get '/hi' do
+    'Hi'
+  end
 end
