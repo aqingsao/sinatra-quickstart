@@ -1,10 +1,13 @@
-require "#{File.dirname(__FILE__)}/spec_helper"
+# require "#{File.dirname(__FILE__)}/spec_helper"
+require 'rack/test'
+require 'test/unit'
+require File.join(File.dirname(__FILE__), "../app")
 
 class MyAppTest < Test::Unit::TestCase
   include Rack::Test::Methods
 
   def app
-    Sinatra::Application
+    Application
   end
 
   def test_hi
