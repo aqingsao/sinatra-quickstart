@@ -17,10 +17,12 @@ Provides one API for various databases, sqlite, mysql, and even nosql, has [much
 ## How to use it
 
 You could simply fork it and use as a template when you are developing a sinatra project.
+### When first run
+gem install bundler
+bundler install
 
 ### Run app
 rackup -p 4567
 
-### Run test
-
-
+### Run Testing
+bundle exec ruby spec/app_spec.rb 

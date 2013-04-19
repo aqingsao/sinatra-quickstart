@@ -2,6 +2,8 @@ require 'rubygems'
 require 'bundler/setup'
 require 'sinatra/base'
 require 'dm-core'
+require 'dm-core'
+require 'dm-validations'
 require 'slim'
 
 configure :development do

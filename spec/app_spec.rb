@@ -1,7 +1,5 @@
 # require "#{File.dirname(__FILE__)}/spec_helper"
-require 'rack/test'
-require 'test/unit'
-require File.join(File.dirname(__FILE__), "../app/app")
+require File.join(File.dirname(__FILE__), "spec_helper")
 
 class MyAppTest < Test::Unit::TestCase
   include Rack::Test::Methods
