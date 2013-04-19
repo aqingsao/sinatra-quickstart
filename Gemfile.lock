@@ -1,0 +1,27 @@
+GIT
+  remote: git://github.com/sinatra/sinatra.git
+  revision: 7c3a194935b7c9871783039958ac2963f83539b9
+  specs:
+    sinatra (1.4.2)
+      rack (~> 1.5, >= 1.5.2)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rack (1.5.2)
+    rack-protection (1.5.0)
+      rack
+    slim (1.3.8)
+      temple (~> 0.6.3)
+      tilt (~> 1.3.3)
+    temple (0.6.4)
+    tilt (1.3.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  sinatra!
+  slim
