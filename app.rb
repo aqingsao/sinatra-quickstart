@@ -6,3 +6,7 @@ require 'sinatra'
 get '/' do
   slim :index
 end
+
+get '/hi' do
+	'Hi'
+end
