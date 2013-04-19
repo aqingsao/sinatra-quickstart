@@ -10,9 +10,7 @@ configure :development do
 end
 
 configure :production do
-  DataMapper.setup(:default, (ENV["DATABASE_URL"] || "sqlite3:///#{File.expand_path(File.dirname(__FILE__))}/#{Sinatra::Base.environment}.db"))
-  # DataMapper.setup(:default, 'mysql://user:password@hostname/database')
-
+  DataMapper.setup(:default, 'mysql://localhost/test')
 end
 
 class Todo
