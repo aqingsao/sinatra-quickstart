@@ -19,7 +19,7 @@ Provides one API for various databases, sqlite, mysql, and even nosql, has [much
 You could simply fork it and use as a template when you are developing a sinatra project.
 ### When first run
 gem install bundler  
-bundler install
+bundle install
 
 ### Run app
 rackup -p 4567
